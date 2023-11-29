@@ -1,0 +1,104 @@
+:root {
+    background-color: rgb(210, 230, 255);
+}
+
+label {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 12px;
+    height: 18px;
+    margin-bottom: 4px;
+}
+
+input[type=submit] {
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 102, 255);
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 0px 10px rgba(0, 102, 255, 0.5);
+}
+
+input[type=submit]:focus {
+    background-color: rgb(0, 77, 192);
+}
+
+input[type=text] {
+    width: calc(100% - 2em);
+    height: 32px;
+    padding: 0 1em 0 1em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: 0.5s;
+}
+
+input[type=text]:focus {
+    border: 1px solid rgb(105, 195, 255);
+    box-shadow: 0px 0px 10px rgba(105, 195, 255, 0.2);
+    -webkit-transition: 0.5s;
+}
+
+input[type=text].invalid {
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+    -webkit-transition: 0.5s;
+}
+
+select {
+    width: 96px;
+    height: 32px;
+    margin-right: 8px;
+    padding: 0 1em 0 1em;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: all 0.5s;
+}
+
+select:focus {
+    border: 1px solid rgb(105, 195, 255);
+    box-shadow: 0px 0px 10px rgba(105, 195, 255, 0.2);
+    -webkit-transition: all 0.5s;
+}
+
+select.invalid {
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+    -webkit-transition: all 0.5s;
+}
+
+
+.cardForm {
+    position: relative;
+    top: -64px;
+    display: grid;
+    width: 384px;
+    margin: 0 auto 0 auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.rccs {
+    position: relative;
+    z-index: 9;
+}
+
+.rccs__card {
+    box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.errorMessage {
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 11px;
+    color: red;
+    height: 18px;
+    margin: 4px 0 4px 0;
+}
